@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html x-ng-app="module">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site</title>
+    <!-- Importation CSS -->
+    <link rel="stylesheet" href="css/streamer.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+    <!-- Importation Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-cookies.js"></script>
+
+    <!-- Importation Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Importation AngularJS -->
+    <script src="module/module.js"></script>
+        <!-- Controller -->
+    <script src="module/controller/menuController.js"></script>
+    <script src="module/controller/streamerControlleur.js"></script>
+        <!-- Service -->
+
+        <!-- Component -->
+
+        <!-- Route -->
+        <script src="module/route/route.js"></script>
+
+</head>
+<body>
+<!-- Mon menu gere avec Bootstrap -->
+<header x-ng-include="'templates/menu.html'" x-ng-controller="menuController">
+</header>
+<main class="container" x-ng-view>
+</main>
+</body>
+</html>
